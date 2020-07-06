@@ -1,12 +1,47 @@
 import React from 'react';
 import './App.css';
-
+import Tabela from './Tabela'
 function App() {
+  const autores = [
+    {
+      nome: 'Paulo',
+      livro: 'React',
+      preco: '1000'
+    },
+    {
+      nome: 'Daniel',
+      livro: 'Java',
+      preco: '99'
+    },
+    {
+      nome: 'Marcos',
+      livro: 'Design',
+      preco: '150'
+    },
+    {
+      nome: 'Nicolas',
+      livro: 'DevOps',
+      preco: '100'
+    },
+    {
+      nome: 'Nicolas',
+      livro: 'DevOps',
+      preco: '100'
+    },
+    {
+      nome: 'Nicolas',
+      livro: 'DevOps',
+      preco: '100'
+    }
+  ];
+
   return (
     <div className="App">
-      <h1> Olá, Brasil</h1>
-          </div>
+      <Tabela autores =  {autores} />
+    </div>
   );
 }
+
+ 
 
 export default App;
